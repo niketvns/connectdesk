@@ -1,0 +1,16 @@
+.all-mails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    height: 90vh;
+    overflow: auto;
+    width: 90vw;
+}
+
+@media screen and (max-width: 800px) {
+    .all-mails {
+        width: 100vw;
+        margin-left: 20px;
+    }
+}

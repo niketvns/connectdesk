@@ -1,0 +1,97 @@
+.mail-card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    width: 98%;
+}
+
+.mail-content {
+    color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.unread {
+    background-color: #edf5fe;
+}
+
+.read h3 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.unread .mail-content {
+    color: var(--color-primary);
+}
+
+.mail-card-main .star {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.mail-card-main .stared {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(255, 132, 10);
+}
+
+.mail-card-main .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mail-card-main .buttons button {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.mail-card-main .buttons .left a {
+    text-decoration: none;
+    background-color: darkcyan;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.mail-card-main .buttons .right button {
+    margin: 0 10px;
+    border: none;
+}
+
+.mail-card-main .buttons button.delete {
+    color: white;
+    color: red;
+}
+
+.mail-card-main .buttons button.mark-as-read {
+    color: black;
+    color: rgb(30, 180, 0);
+}
+
+.mail-card-main .buttons button.report-spam {
+    color: white;
+    color: rgb(208, 62, 145);
+}
+
+@media screen and (max-width: 500px) {
+    .mail-card-main .buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        padding: 0px;
+    }
+}

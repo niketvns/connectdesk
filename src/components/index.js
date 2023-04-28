@@ -1,0 +1,8 @@
+export { default as Sidebar } from './layout/sidebar/Sidebar'
+export { default as Footer } from './layout/footer/Footer'
+export { default as Navbar } from './layout/navbar/Navbar'
+export { default as Inbox } from './pages/inbox/Inbox'
+export { default as Spam } from './pages/spam/Spam'
+export { default as Trash } from './pages/trash/Trash'
+export { default as Error } from './pages/error/Error'
+export { default as SingleEmail } from './pages/singleEmail/SingleEmail'

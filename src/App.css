@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --color-primary: #0F6CBD;
+  --theme-light: #B4D6FA;
+  --color-white: #fff;
+  --color-neutral-white: #FAFAFA;
+  --color-neutral-black: #424242;
+  --color-hover: #CFE4FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.app-main {
+  display: flex;
+  gap: 20px;
+  background-color: var(--color-neutral-white);
+  font-family: 'Lato', sans-serif;
+}
+
+.bg-text-light {
+  margin: 30px;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: capitalize;
+  font-style: italic;
+}
